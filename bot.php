@@ -4,7 +4,7 @@
  
    $telegram = new Api('437902177:AAEeJ4LW9IyypuDNdPfvKJfZKUTpwGWSHq4'); //Устанавливаем токен, полученный у BotFather
    $result = $telegram -> getWebhookUpdates(); //Передаем в переменную $result полную информацию о сообщении пользователя
-   
+   $file = "log.txt";
    $text = $result["message"]["text"]; //Текст сообщения
    $chat_id = $result["message"]["chat"]["id"]; //Уникальный идентификатор пользователя
    $name = $result["message"]["from"]["username"]; //Юзернейм пользователя
@@ -37,5 +37,5 @@
    }else{
        $telegram->sendMessage([ 'chat_id' => $chat_id, 'text' => "Отправьте текстовое сообщение." ]);
    }
-    file_put_contents("log.txt",$result);
+    file_put_contents($file,"123");
    ?>
