@@ -8,7 +8,7 @@
    $text = $result["message"]["text"]; //Текст сообщения
    $chat_id = $result["message"]["chat"]["id"]; //Уникальный идентификатор пользователя
    $name = $result["message"]["from"]["username"]; //Юзернейм пользователя
-   $keyboard = [["Последние статьи"],["Картинка"],["Гифка"]]; //Клавиатура
+   $keyboard = [["BLA"],["aaaa"],["Гифка"]]; //Клавиатура
  
    if($text){
         if ($text == "/start") {
