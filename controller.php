@@ -8,7 +8,7 @@
 
 ini_set('max_execution_time', 0); 
 
-date_default_timezone_set('Europe/Kiev'); #Устанавливаем часовой пояс.
+date_default_timezone_set('Etc/GMT+4'); #Устанавливаем часовой пояс.
 error_reporting(E_ERROR | E_PARSE); #Включаем вывод только определённых ошибок.
 
 #=============================ДЕФАЙНЫ========================
