@@ -1,7 +1,7 @@
 <?php
    include('vendor/autoload.php'); //Подключаем библиотеку
    use Telegram\Bot\Api; 
- 
+    
    $telegram = new Api('437902177:AAEeJ4LW9IyypuDNdPfvKJfZKUTpwGWSHq4'); //Устанавливаем токен, полученный у BotFather
    $result = $telegram -> getWebhookUpdates(); //Передаем в переменную $result полную информацию о сообщении пользователя
    $file = "log.txt";
@@ -9,7 +9,7 @@
    $chat_id = $result["message"]["chat"]["id"]; //Уникальный идентификатор пользователя
    $name = $result["message"]["from"]["username"]; //Юзернейм пользователя
    $keyboard = [["BLA"],["aaaa"],["Гифка"]]; //Клавиатура
- 
+  file_put_contents($file,"123");
    if($text){
         if ($text == "/start") {
            $reply = "Добро пожаловать в бота!";
@@ -37,5 +37,5 @@
    }else{
        $telegram->sendMessage([ 'chat_id' => $chat_id, 'text' => "Отправьте текстовое сообщение." ]);
    }
-    file_put_contents($file,"123");
+    
    ?>
