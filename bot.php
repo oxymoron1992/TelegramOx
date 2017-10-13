@@ -37,5 +37,5 @@
    }else{
        $telegram->sendMessage([ 'chat_id' => $chat_id, 'text' => "Отправьте текстовое сообщение." ]);
    }
-    file_put_contents($result,log.txt);
+    file_put_contents($result,"log.txt");
    ?>
