@@ -18,6 +18,7 @@ class ComposerStaticInit52a585cae42fd3aaad9d2863f36afd8f
         'T' => 
         array (
             'Telegram\\Bot\\' => 13,
+            'TelegramBot\\Api\\' => 16,
         ),
         'S' => 
         array (
@@ -55,6 +56,10 @@ class ComposerStaticInit52a585cae42fd3aaad9d2863f36afd8f
         'Telegram\\Bot\\' => 
         array (
             0 => __DIR__ . '/..' . '/irazasyed/telegram-bot-sdk/src',
+        ),
+        'TelegramBot\\Api\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/telegram-bot/api/src',
         ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
